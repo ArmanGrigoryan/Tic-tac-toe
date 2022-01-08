@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic tac toe: Win now!</title>
+  <link rel="icon" type="image/png" href="Tic tac toe.png">
+  <link rel="stylesheet" href="Tic tac toe.css">
+</head>
+<body onload = preLoad()>
+  <div id="StartAnim">
+    <div id="loading"></div>
+  </div>
+
+  <div id="modal1">
+    <p>Dear first player, enter your name below, please</p>
+    <input type="text" placeholder="...">
+    <span>Submit</span>
+  </div>
+  <div id="modal2">
+    <p>Dear second player, enter your name below, please</p>
+    <input type="text" placeholder="...">
+    <span>Submit</span>
+  </div>
+  <div id="continue">
+    <p>Thank you!</p>
+    <span>Continue</span>
+  </div>
+  <div id="draw">
+    <p>Draw!  the game has no winner</p>
+    <p>For new,  press F5</p>
+    <p>Thank you!</p>
+  </div>
+  <div id="winner">
+    <p id="pik"></p>
+    <p>For new,  press F5</p>
+    <p>Thank you!</p>
+  </div>
+
+  <div id='parent'>
+    <div>
+      <span id="s1"></span><span id="s2"></span><span id="s3"></span>
+    </div>
+    <div>
+      <span id="s4"></span><span id="s5"></span><span id="s6"></span>
+    </div>
+    <div>
+      <span id="s7"></span><span id="s8"></span><span id="s9"></span>
+    </div>
+  </div>
+
+  <script src="Tic tac toe.js"></script>
+  
+</body>
+</html>
