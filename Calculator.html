@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="https://img.icons8.com/ios/50/000000/calculator--v1.png">
+  <link rel="stylesheet" href="Calculator.css">
+  <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <title>Calculator: Try it yourself</title>
+</head>
+<body>
+  <div id="maximize">
+    <p>Maximize</p>
+    <i class="fa fa-window-maximize" style="font-size: 40px; margin: 0; padding: 0;"></i>
+  </div>
+  <div id="closeCalc">
+    <p>Press F5</p>
+  </div>
+
+  <div id="root">
+    <div id="close">
+      <span>Calculator</span>
+      <i class="fa fa-window-minimize" style="font-size: 45px;"></i>
+      <i class="fa fa-close"></i>
+    </div>
+    <div id="standart">
+      <i class="fa fa-bars" style="font-size: 45px;"></i>
+      <p>Standard</p>
+      <div id="menu">
+        <p onclick="op_menu1()">Contact</p>
+        <p onclick="op_menu2()">About *</p>
+        <div id="menu_1">
+          <i class="fa fa-close" onclick="menu1()"></i>
+          <p>Type your message here, then submit</p>
+          <input type="text">
+          <button>Submit</button>
+        </div>
+        <div id="menu_2">
+          <i class="fa fa-close" onclick="menu2()"></i>
+          <p>This calculator is owned by Grigoryans' software development company. The company was created by Arman Grigoryan, as a small startup. But eventually it became the one of most logical applications produced company in the Armenia. It has over 1M followers around the world and about 3M from Armenia.</p>
+          <p>Grigoryans' LTD</p>
+          <p>All rights reserved</p>
+        </div>
+      </div>
+    </div>
+    <div id="line">
+      <p></p>
+    </div>
+    <div id="opers">
+      <span onclick="on()">On</span>
+      <span onclick="isOff()">Off</span>
+      <span onclick="func()">AC</span>
+      <span onclick="back()"><</span>
+      <span onclick="append(this.innerText)">7</span>
+      <span onclick="append(this.innerText)">8</span>
+      <span onclick="append(this.innerText)">9</span>
+      <span onclick="save(this)">M</span>
+      <span onclick="append(this.innerText)">4</span>
+      <span onclick="append(this.innerText)">5</span>
+      <span onclick="append(this.innerText)">6</span>
+      <span onclick="sqrt()">sqrt(x)</span>
+      <span onclick="append(this.innerText)">1</span>
+      <span onclick="append(this.innerText)">2</span>
+      <span onclick="append(this.innerText)">3</span>
+      <span onclick="prod_2()">x^2</span>
+      <span onclick="append(this.innerText)">0</span>
+      <span onclick="append(this.innerText)">+</span>
+      <span onclick="append(this.innerText)">/</span>
+      <span onclick="append(this.innerText)">*</span>
+      <span onclick="append(this.innerText)">%</span>
+      <span onclick="append(this.innerText)">-</span>
+      <span onclick="equal()" style="width: 50%;">=</span>
+    </div>
+  </div>
+  
+  <script src="Calculator.js" defer></script>
+
+</body>
+</html>
